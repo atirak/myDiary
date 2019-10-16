@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/navigation"
+            app:startDestination="@id/home">
+
+    <fragment android:id="@+id/home" android:name="buu.informatics.s59160624.mydiary.home"
+              android:label="fragment_home" tools:layout="@layout/fragment_home">
+        <action android:id="@+id/action_home_to_addDiary" app:destination="@id/addDiary"/>
+    </fragment>
+    <fragment android:id="@+id/addDiary" android:name="buu.informatics.s59160624.mydiary.addDiary"
+              android:label="fragment_add_diary" tools:layout="@layout/fragment_add_diary"/>
+</navigation>
